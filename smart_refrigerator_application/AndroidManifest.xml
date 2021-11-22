@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smart_refrigerator_application" >
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Smart_Refrigerator_Application" >
+        <!-- 메인 액티비티 사용 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:stopWithTask="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- 냉장고 상세정보 액티비티 사용 -->
+        <activity android:name=".RefrigeratorInformationActivity"/>
+
+        <!-- 음식 추가 액티비티 사용 -->
+        <activity android:name=".AddFoodActivity"/>
+
+        <!-- 냉장고 앱 설정 액티비티 사용 -->
+        <activity android:name=".RefrigeratorSettingActivity"/>
+
+        <!-- 음식 상세 액티비티 사용 -->
+        <activity android:name=".FoodDetailActivity"/>
+
+        <!-- 최초 실행 액티비티 사용 -->
+        <activity android:name=".FirstExecutionActivity"/>
+
+
+
+    </application>
+
+</manifest>

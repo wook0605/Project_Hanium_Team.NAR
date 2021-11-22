@@ -1,0 +1,77 @@
+<!-- 안드로이드에서는 문자열을 되도록 이곳에 모아두는 것이 좋다. "@string/문자열 이름"은 이 파일에서 해당하는 문자열 이름으로 문자열이 지정되어 있다는 의미이다. -->
+<!-- <string name="strBtn1">버튼임</string> 과 같은 형태로 사용한다. -->
+<resources>
+    <string name="app_name">Smart_Refrigerator_Application</string>
+
+    <!-- 최초 실행 화면에서 사용하는 문자열 -->
+    <string name="default_notification_channel_id" />
+    <string name="fcm_message" />
+    <string name="msg_token_fmt" translatable="false">토큰 : %s</string>
+
+    <!-- 음식 상세 정보 화면에서 사용하는 문자열 -->
+    <string name="food_detail_category1">입고일</string>
+    <string name="food_detail_category2">유통기한</string>
+    <string name="food_detail_category3">수량</string>
+    <string name="food_detail_category4">위치</string>
+    <string name="food_detail_category5">메모</string>
+
+    <!-- 냉장고 정보 출력 화면에서 사용하는 문자열 -->
+    <string name="refrigerator_information_category1">온도 / 습도</string>
+    <string name="refrigerator_information_category2">개폐여부</string>
+    <string name="refrigerator_information_category3">유통기한 \n임박식품</string>
+
+    <!-- 식품 추가 화면에서 사용하는 문자열 -->
+    <string name="add_food_category1">식품명</string>
+    <string name="add_food_category2">입고일</string>
+    <string name="add_food_category3">유통기한</string>
+    <string name="add_food_category4">수량</string>
+    <string name="add_food_category5">위치</string>
+    <string name="add_food_category6">메모</string>
+    <string name="null_text">입력해주세요.</string>
+
+    <!-- 전체 상단 버튼 문자열 -->
+    <string name="back_button">뒤로</string>
+    <string name="save_button">저장</string>
+    <string name="modify_button">수정</string>
+    <string name="delete_button">삭제</string>
+    <string name="use_button">사용</string>
+
+    <!--  Spinner에 사용되는 값 (아마도 나중에 설정화면에서 유통기한알람 설정하고 냉장고 고온 다습 경보 기준 설정에 사용할 것) //습도 아직 미설정임-->
+    <string-array name="spinner_expiration_data">
+        <item>1일</item>
+        <item>2일</item>
+        <item>3일</item>
+        <item>4일</item>
+        <item>5일</item>
+        <item>6일</item>
+        <item>7일</item>
+    </string-array>
+    
+    <string-array name="spinner_temperature">
+        <item>0c˚</item>
+        <item>1c˚</item>
+        <item>2c˚</item>
+        <item>3c˚</item>
+        <item>4c˚</item>
+        <item>5c˚</item>
+        <item>6c˚</item>
+        <item>7c˚</item>
+        <item>8c˚</item>
+        <item>9c˚</item>
+        <item>10c˚</item>
+    </string-array>
+    
+    <string-array name="spinner_humidity">
+        <item>40</item>
+    </string-array>
+
+    <!-- 위치 설정 -->
+    <string-array name="Position">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>
